@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="This is a Signup Page">
+	<meta naem="keywords" content="HTML, CSS, JS, Test Series">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<img class="bg" src="bgimage.jpg">
+<title> Online Test Series</title>
+<link rel="stylesheet" href="signup.css">
+
+</head>
+
+	<body>
+		
+		<div class="container">
+		<h1> KVS Online Test Quiz</h1>
+		<h1> Registration Form </h1>
+		
+<form>
+  <label for="today">Today's Date:</label>
+  <input type="date" id="today" name="today">
+  
+</form>
+
+<script>
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('today').value = today;
+</script>	
+	<form style="background-color: #C5CAE9" action="connect.php" method="post">
+	<fieldset>
+		<legend><b>Personal Data<b></legend>
+		<p> User Name: </p>
+		<input type="text" name="name " id="name" placeholder="   Enter Your full name"><br>
+		<p> Father Name: </p>
+		<input type="text" name="fname" id="fname" placeholder="   Enter Your Fater name"><br>
+		<p> E-mail ID: </p>
+		<input type="Email" name="email" id="email" placeholder="   Enter Your email"><br>
+		<p> Mobile no. :</p>
+		<input type="text" name="mobile" id="mobile" placeholder="   Enter Your mobile no. "><br>
+		<p> Password: </p>
+		<input type="password" name="pwd" id="pwd" placeholder="   Create Your Password"><br>
+		<p> Re-enter Password: </p>
+		<input type="password" name="re-pwd" id="re-pwd" placeholder="  Re-enter"><br>
+		<p>Gender</p>
+		<input type="text" name="gender" id="gender" placeholder=" Type Male/Female/Other">
+		
+	
+		</form>
+		<button class="btn" id="subbtn"><h3>Submit </h3></button> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+		<button class="btn" id="clrbtn"><h3> Clear </h3></button>
+		<br><br>
+		<a href="C:\Users\Dell\Desktop\3 N T 3 R  Project\project\Online Test Series\login Page\loginPage.html"> Already Registred,  Login Here..</a>
+	</fieldset>
+	</form>
+
+	</body>
+
+
+</html>
