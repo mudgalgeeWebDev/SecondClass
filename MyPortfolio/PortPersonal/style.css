@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.Protfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+
+}
+
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+}
+
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.left-container{
+    background: grey;
+    width: 70%;   
+    padding-left: 3rem;
+
+
+
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;   
+
+}
+
+.icons .fa-brands{
+    color: white;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#0c8fdb,#db3a3a,#0c0101ee,#36c281);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    border-radius: 0.8rem;
+
+        
+}
+
+.right-container
+{
+    background: linear-gradient(rgb(91, 91, 197), #353536da);
+    width: 30%;
+ 
+}
+
+.content{
+    margin-left: 1.5rem;
+}
+.content h2{
+    font-size:2rem;
+    color: white
+}
+.content h1{
+    font-size: 1.5rem;
+    color:aqua;
+}
+
+.detail{
+    font-size: 1.2rem;
+    color: white;
+    max-width: 40rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.5rem;
+}
+
+.btn-container button{
+    border: .1rem solid aqua;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer; 
+    transition: 0.7s ease;
+
+}
+
+button:nth-child{
+    background: lightblue;
+    
+}
+button:nth-child(2){
+    /* background: transparent; */
+    color: black;
+    margin-left: 2rem;
+}
+
+button:nth-child(1){
+    /* background: transparent; */
+    color: black;
+    margin-left: 2rem;
+}
+
+button:nth-child(1):hover{
+    background: rgb(7, 1, 1);
+    color: white;
+
+}
+
+button:nth-child(2):hover{
+    background: rgb(7, 1, 1);
+    color: white;
+
+}
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 70%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1){ 
+
+    background: linear-gradient(90deg, #4381c7, rgb(109, 80, 80), #420d0d, #4a9ab9, #657879e7);
+    width: 20rem;
+    box-shadow:
+0 0 1rem rgb(21, 106, 163),
+inset 0 0 1rem rgb(212, 8, 212);
+    
+}
+
+.circle:nth-child(2){
+    background: white;
+    width: 18rem;
+    background-image: url(image/sanjay_photo.jpg);
+    background-size: 100%;
+    background-repeat: none;
+    box-shadow:
+    0 0 1rem white,
+    inset 0 0 1rem white; 
+}
+
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+     transform: scaleX(0);
+     transform-origin: bottom right;
+     transition: transform .5s;
+
+}
+.navlist li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
